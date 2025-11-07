@@ -8,4 +8,4 @@ def property_list(request):
     data = {
         'properties': list(properties.values())
     }
-    return JsonResponse(data)
+    return JsonResponse({'data': data})
