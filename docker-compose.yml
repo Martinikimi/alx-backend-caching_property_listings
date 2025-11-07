@@ -1,10 +1,10 @@
 services:
   postgres:
-    image: postgres:15  # ← Change from "latest" to "15" (stable version)
+    image: postgres:latest
     environment:
       POSTGRES_DB: property_db
-      POSTGRES_USER: property_user
-      POSTGRES_PASSWORD: property_password
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     ports:
       - "5432:5432"
     volumes:
